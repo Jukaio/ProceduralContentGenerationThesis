@@ -49,5 +49,6 @@ namespace DungeonEvaluation
         }
 
         public Type type;
+        public List<DungeonSpace> neighbours = new List<DungeonSpace>();
     }
 }

@@ -137,18 +137,16 @@ public class CellularAutomataGenerator : Generator
 
     private void naive_step(Cell<CellState> cell, int count) {
         var at = cell.Index;
-        //if (cell.Value == CellState.Alive)
-        //{
-        //    buffer[at.x, at.y] = count > death_limit ? CellState.Dead : CellState.Alive;
-        //}
-        //else
-        //{
-        //    buffer[at.x, at.y] = count < birth_limit ? CellState.Alive : CellState.Dead;
-        //}
-        if (count > birth_limit)
-            buffer[at.x, at.y] = CellState.Alive;
-        else if (count < death_limit)
-            buffer[at.x, at.y] = CellState.Dead;
+        if (cell.Value == CellState.Alive) {
+            buffer[at.x, at.y] = count > death_limit ? CellState.Dead : CellState.Alive;
+        }
+        else {
+            buffer[at.x, at.y] = count < birth_limit ? CellState.Alive : CellState.Dead;
+        }
+        //if (count > birth_limit)
+        //    buffer[at.x, at.y] = CellState.Alive;
+        //else if (count < death_limit)
+        //    buffer[at.x, at.y] = CellState.Dead;
 
     }
 

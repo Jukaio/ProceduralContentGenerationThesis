@@ -45,8 +45,8 @@ namespace DungeonEvaluation.Layer
             (int x, int y) =>
             {
                 in_data[x, y].find_and_set_neighbours(in_data[x, y].Index, in_data); // should be static...
-                    out_data[x, y].find_and_set_neighbours(in_data[x, y].Index, out_data); // should be static...
-                });
+                out_data[x, y].find_and_set_neighbours(in_data[x, y].Index, out_data); // should be static...
+            });
 
             Input = in_data;
             Output = out_data;

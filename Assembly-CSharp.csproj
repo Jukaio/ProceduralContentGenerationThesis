@@ -60,6 +60,7 @@
     <Compile Include="Assets\Evaluator\Layers\Traversability.cs" />
     <Compile Include="Assets\Evaluator\BaseTypes\Space.cs" />
     <Compile Include="Assets\DungeonBuilder.cs" />
+    <Compile Include="Assets\UnityTutorialCellularAutomata.cs" />
     <Compile Include="Assets\Evaluator\Main.cs" />
     <Compile Include="Assets\Second Iteration\InputStage.cs" />
     <Compile Include="Assets\Evaluator\Tiles\CavernTile.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Assets\Second Iteration\Evaluation.cs" />
     <Compile Include="Assets\CellularAutomataGenerator.cs" />
     <Compile Include="Assets\Evaluator\FloodFiller.cs" />
+    <Compile Include="Assets\Drunkard.cs" />
     <Compile Include="Assets\Evaluator\Tiles\DungeonSpaceTile.cs" />
     <Compile Include="Assets\Evaluator\Layers\Output.cs" />
     <Compile Include="Assets\First Iteration\BoolMatrix9x9.cs" />
@@ -79,7 +81,6 @@
     <Compile Include="Assets\Evaluator\Layers\GenericBase.cs" />
     <Compile Include="Assets\First Iteration\CellularAutomata.cs" />
     <Compile Include="Assets\Evaluator\Generics\GenericEvaluationTypes.cs" />
-    <Compile Include="Assets\UnityTutorialCellularAutomata.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

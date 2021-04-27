@@ -50,9 +50,6 @@ namespace DungeonEvaluation
 
             public void analyse()
             {
-                flooder.reset();
-                out_caverns.Clear();
-
                 for_each(Size,
                 (int x, int y) =>
                 {
@@ -73,7 +70,7 @@ namespace DungeonEvaluation
             }
 
             private FloodFiller flooder;
-            private readonly List<Cavern> out_caverns = new List<Cavern>();
+            readonly public List<Cavern> out_caverns = new List<Cavern>();
         }
     }
 }
