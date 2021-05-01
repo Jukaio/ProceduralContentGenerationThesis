@@ -101,9 +101,14 @@ namespace DungeonEvaluation
 
     public class Main
     {
-        public Main(Generator generator)
+        public Main()
         {
-            export = new Export(generator.GetType().Name.ToString());
+
+        }
+
+        public void set_generator(Generator generator)
+        {
+            this.generator = generator;
             var width = generator.Size.x;
             var height = generator.Size.y;
 
@@ -112,7 +117,7 @@ namespace DungeonEvaluation
             categorisation = new Layer.Categorisation(width, height);
             output = new Layer.Output(width, height);
 
-            this.generator = generator;
+            export = new Export(generator.GetType().Name.ToString());
             export.create_csv();
         }
 
@@ -130,16 +135,16 @@ namespace DungeonEvaluation
         public void run()
         {
 
-            for(int i = 0; i < 10; i++){
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
+            for(int i = 0; i < 50000; i++){
                 reset();
 
                 var level = generator.Layout;
 
-                //var watch = new System.Diagnostics.Stopwatch();
 
                 // Create file
                 // start loop
-                //watch.Start();
 
                 input.start(level);
                 input.feed_matrix_forward(traversability);
@@ -158,8 +163,9 @@ namespace DungeonEvaluation
                 // continue loop
 
                 // close file
-                //watch.Stop();
             }
+            watch.Stop();
+            Debug.Log(watch.ElapsedMilliseconds);
         }
 
         private Generator generator;

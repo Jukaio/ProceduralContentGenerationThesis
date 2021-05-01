@@ -31,9 +31,10 @@ public class Drunkard : Generator
     void Start()
     {
         if (useRandomSeed) {
-            seed = Time.time.ToString();
+            seed = System.DateTime.Now.ToString();
         }
-        pseudoRandom = new System.Random(seed.GetHashCode());
+        Debug.Log("Drunkard: "+ seed);
+        pseudoRandom = new System.Random();
     }
 
 

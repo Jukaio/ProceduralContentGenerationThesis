@@ -66,20 +66,20 @@
     <Compile Include="Assets\Evaluator\Tiles\CavernTile.cs" />
     <Compile Include="Assets\Cells.cs" />
     <Compile Include="Assets\Evaluator\Tiles\TraversabilityTile.cs" />
-    <Compile Include="Assets\First Iteration\Cell.cs" />
+    <Compile Include="Assets\Evaluation 10 000\Cell.cs" />
     <Compile Include="Assets\Second Iteration\Evaluation.cs" />
     <Compile Include="Assets\CellularAutomataGenerator.cs" />
     <Compile Include="Assets\Evaluator\FloodFiller.cs" />
     <Compile Include="Assets\Drunkard.cs" />
     <Compile Include="Assets\Evaluator\Tiles\DungeonSpaceTile.cs" />
     <Compile Include="Assets\Evaluator\Layers\Output.cs" />
-    <Compile Include="Assets\First Iteration\BoolMatrix9x9.cs" />
+    <Compile Include="Assets\Evaluation 10 000\BoolMatrix9x9.cs" />
     <Compile Include="Assets\Evaluator\Tiles\OutputTile.cs" />
     <Compile Include="Assets\Evaluator\Layers\Categorisation.cs" />
     <Compile Include="Assets\Second Iteration\SeparationStage.cs" />
     <Compile Include="Assets\Evaluator\Layers\Input.cs" />
     <Compile Include="Assets\Evaluator\Layers\GenericBase.cs" />
-    <Compile Include="Assets\First Iteration\CellularAutomata.cs" />
+    <Compile Include="Assets\Evaluation 10 000\CellularAutomata.cs" />
     <Compile Include="Assets\Evaluator\Generics\GenericEvaluationTypes.cs" />
   </ItemGroup>
   <ItemGroup>

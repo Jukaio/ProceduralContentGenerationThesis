@@ -37,9 +37,10 @@ public class UnityTutorialCellularAutomata : Generator
     void Start()
     {
         if (useRandomSeed) {
-            seed = Time.time.ToString();
+            seed = System.DateTime.Now.ToString();
         }
         pseudoRandom = new System.Random(seed.GetHashCode());
+        Debug.Log("Cellular: " + seed);
 
         GenerateMap();
     }

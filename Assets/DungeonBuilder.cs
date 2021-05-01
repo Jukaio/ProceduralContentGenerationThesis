@@ -45,7 +45,7 @@ public class DungeonBuilder : MonoBehaviour
                 break;
         }
 
-        dungeon_evaluation = new DungeonEvaluation.Main(generator);
+        dungeon_evaluation = new DungeonEvaluation.Main();
         //first_stage = new DungeonEvaluation.InputStage();
         //second_stage = new DungeonEvaluation.SeparationStage();
         //generator.reset();
@@ -97,13 +97,10 @@ public class DungeonBuilder : MonoBehaviour
     }
     public void initialise_map()
     {
-
-        //var level = generator.Layout;
-        //first_stage.set_input_tile_data(level);
-        //first_stage.analyse();
-
-        //second_stage.set_input_tile_data(first_stage);
-        //second_stage.analyse();
+        dungeon_evaluation.set_generator(GetComponent<Drunkard>());
+        dungeon_evaluation.reset();
+        dungeon_evaluation.run();
+        dungeon_evaluation.set_generator(GetComponent<UnityTutorialCellularAutomata>());
         dungeon_evaluation.reset();
         dungeon_evaluation.run();
 
